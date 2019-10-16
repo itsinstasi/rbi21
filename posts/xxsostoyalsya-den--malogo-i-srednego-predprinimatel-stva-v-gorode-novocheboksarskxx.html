@@ -43,6 +43,9 @@
     <meta property="og:locale" content="Ru-ru" />
     <meta property="og:site_name" content="rbi21" />
 
+	<!--modernizr-->
+	<script src="../js/vendors/modernizr-custom.js"></script>
+
 </head>
 <body>
     <!--[if lt IE 8]>
@@ -54,7 +57,7 @@
 		Вам нужно включить JavaScript в своем браузере, чтобы  отображение этой страницы было корректно.
     </noscript>
 	<div class="wrapper">
-		<header class="header">
+		<header class="header" id="js-header">
 			<div class="container">
 				<div class="header__wrap">
 					<div class="header__left">
@@ -68,241 +71,247 @@
 			</div>
 		</header>	
 		<div class="main">
-			<div class="stories" style="display: none;">
+			<div class="stories">
 				<div class="container">
-					<div class="stories__slider" id="js-stories-slider">
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="бизнес инкубатор">
-								<a href="../tags/./biznes-inkubator.html">
-									<div class="stories__slide-pic"><img src="../img/og/biznes-inkubator.png" alt="бизнес инкубатор" /></div>
-									<div class="stories__slide-txt">бизнес инкубатор</div>
-								</a>
+					<div class="stories__slider-wrap">
+						<div class="stories__slider" id="js-stories-slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="stories__slide" title="бизнес инкубатор">
+										<a href="../tags/./biznes-inkubator.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/biznes-inkubator.png);"></div>
+											<div class="stories__slide-txt">бизнес инкубатор</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="мсп">
+										<a href="../tags/./msp.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/msp.png);"></div>
+											<div class="stories__slide-txt">мсп</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="минэкономразвития чувашии">
+										<a href="../tags/./minekonomrazvitiya-chuvashii.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/minekonomrazvitiya-chuvashii.png);"></div>
+											<div class="stories__slide-txt">минэкономразвития чувашии</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="мэррф">
+										<a href="../tags/./merrf.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/merrf.png);"></div>
+											<div class="stories__slide-txt">мэррф</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="госп одде ржка">
+										<a href="../tags/./gosp-odde-rzhka.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/gosp-odde-rzhka.png);"></div>
+											<div class="stories__slide-txt">госп одде ржка</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="п одде ржка предпри нимательства">
+										<a href="../tags/./p-odde-rzhka-predpri-nimatel-stva.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/p-odde-rzhka-predpri-nimatel-stva.png);"></div>
+											<div class="stories__slide-txt">п одде ржка предпри нимательства</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="рби">
+										<a href="../tags/./rbi.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/rbi.png);"></div>
+											<div class="stories__slide-txt">рби</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="центр мой бизнес">
+										<a href="../tags/./tsentr-moy-biznes.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/tsentr-moy-biznes.png);"></div>
+											<div class="stories__slide-txt">центр мой бизнес</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="центрп одде ржки предпри нимательства">
+										<a href="../tags/./tsentrp-odde-rzhki-predpri-nimatel-stva.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/tsentrp-odde-rzhki-predpri-nimatel-stva.png);"></div>
+											<div class="stories__slide-txt">центрп одде ржки предпри нимательства</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="rbi21">
+										<a href="../tags/./rbi21.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/rbi21.png);"></div>
+											<div class="stories__slide-txt">rbi21</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="бизнесв чувашии">
+										<a href="../tags/./biznesv-chuvashii.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/biznesv-chuvashii.png);"></div>
+											<div class="stories__slide-txt">бизнесв чувашии</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="мой бизнес">
+										<a href="../tags/./moy-biznes.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/moy-biznes.png);"></div>
+											<div class="stories__slide-txt">мой бизнес</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="2019">
+										<a href="../tags/./2019.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/2019.png);"></div>
+											<div class="stories__slide-txt">2019</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="центрп дде ржки предпри нимательства">
+										<a href="../tags/./tsentrp-dde-rzhki-predpri-nimatel-stva.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/tsentrp-dde-rzhki-predpri-nimatel-stva.png);"></div>
+											<div class="stories__slide-txt">центрп дде ржки предпри нимательства</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="чебоксары">
+										<a href="../tags/./cheboksary.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/cheboksary.png);"></div>
+											<div class="stories__slide-txt">чебоксары</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="чувашия">
+										<a href="../tags/./chuvashiya.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/chuvashiya.png);"></div>
+											<div class="stories__slide-txt">чувашия</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="высказывания">
+										<a href="../tags/./vyskazyvaniya.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/vyskazyvaniya.png);"></div>
+											<div class="stories__slide-txt">высказывания</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="2018">
+										<a href="../tags/./2018.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/2018.png);"></div>
+											<div class="stories__slide-txt">2018</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="бизнес">
+										<a href="../tags/./biznes.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/biznes.png);"></div>
+											<div class="stories__slide-txt">бизнес</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="книги">
+										<a href="../tags/./knigi.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/knigi.png);"></div>
+											<div class="stories__slide-txt">книги</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="дмп">
+										<a href="../tags/./dmp.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/dmp.png);"></div>
+											<div class="stories__slide-txt">дмп</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="предпри ниматели чувашии">
+										<a href="../tags/./predpri-nimateli-chuvashii.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/predpri-nimateli-chuvashii.png);"></div>
+											<div class="stories__slide-txt">предпри ниматели чувашии</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="рби 21">
+										<a href="../tags/./rbi-21.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/rbi-21.png);"></div>
+											<div class="stories__slide-txt">рби 21</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="полезное">
+										<a href="../tags/./poleznoe.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/poleznoe.png);"></div>
+											<div class="stories__slide-txt">полезное</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="подборка">
+										<a href="../tags/./podborka.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/podborka.png);"></div>
+											<div class="stories__slide-txt">подборка</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="чувашия 2018">
+										<a href="../tags/./chuvashiya-2018.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/chuvashiya-2018.png);"></div>
+											<div class="stories__slide-txt">чувашия 2018</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="ново чебоксарск">
+										<a href="../tags/./novo-cheboksarsk.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/novo-cheboksarsk.png);"></div>
+											<div class="stories__slide-txt">ново чебоксарск</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="мама предпри ниматель">
+										<a href="../tags/./mama-predpri-nimatel-.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/mama-predpri-nimatel-.png);"></div>
+											<div class="stories__slide-txt">мама предпри ниматель</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="день предпри нимательства">
+										<a href="../tags/./den--predpri-nimatel-stva.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/den--predpri-nimatel-stva.png);"></div>
+											<div class="stories__slide-txt">день предпри нимательства</div>
+										</a>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="мсп">
-								<a href="../tags/./msp.html">
-									<div class="stories__slide-pic"><img src="../img/og/msp.png" alt="мсп" /></div>
-									<div class="stories__slide-txt">мсп</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="минэкономразвития чувашии">
-								<a href="../tags/./minekonomrazvitiya-chuvashii.html">
-									<div class="stories__slide-pic"><img src="../img/og/minekonomrazvitiya-chuvashii.png" alt="минэкономразвития чувашии" /></div>
-									<div class="stories__slide-txt">минэкономразвития чувашии</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="мэррф">
-								<a href="../tags/./merrf.html">
-									<div class="stories__slide-pic"><img src="../img/og/merrf.png" alt="мэррф" /></div>
-									<div class="stories__slide-txt">мэррф</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="госп одде ржка">
-								<a href="../tags/./gosp-odde-rzhka.html">
-									<div class="stories__slide-pic"><img src="../img/og/gosp-odde-rzhka.png" alt="госп одде ржка" /></div>
-									<div class="stories__slide-txt">госп одде ржка</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="п одде ржка предпри ниматель ства">
-								<a href="../tags/./p-odde-rzhka-predpri-nimatel--stva.html">
-									<div class="stories__slide-pic"><img src="../img/og/p-odde-rzhka-predpri-nimatel--stva.png" alt="п одде ржка предпри ниматель ства" /></div>
-									<div class="stories__slide-txt">п одде ржка предпри ниматель ства</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="рби">
-								<a href="../tags/./rbi.html">
-									<div class="stories__slide-pic"><img src="../img/og/rbi.png" alt="рби" /></div>
-									<div class="stories__slide-txt">рби</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="центр мой бизнес">
-								<a href="../tags/./tsentr-moy-biznes.html">
-									<div class="stories__slide-pic"><img src="../img/og/tsentr-moy-biznes.png" alt="центр мой бизнес" /></div>
-									<div class="stories__slide-txt">центр мой бизнес</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="центрп одде ржки предпри нимательства">
-								<a href="../tags/./tsentrp-odde-rzhki-predpri-nimatel-stva.html">
-									<div class="stories__slide-pic"><img src="../img/og/tsentrp-odde-rzhki-predpri-nimatel-stva.png" alt="центрп одде ржки предпри нимательства" /></div>
-									<div class="stories__slide-txt">центрп одде ржки предпри нимательства</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="rbi21">
-								<a href="../tags/./rbi21.html">
-									<div class="stories__slide-pic"><img src="../img/og/rbi21.png" alt="rbi21" /></div>
-									<div class="stories__slide-txt">rbi21</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="бизнесв чувашии">
-								<a href="../tags/./biznesv-chuvashii.html">
-									<div class="stories__slide-pic"><img src="../img/og/biznesv-chuvashii.png" alt="бизнесв чувашии" /></div>
-									<div class="stories__slide-txt">бизнесв чувашии</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="мой бизнес">
-								<a href="../tags/./moy-biznes.html">
-									<div class="stories__slide-pic"><img src="../img/og/moy-biznes.png" alt="мой бизнес" /></div>
-									<div class="stories__slide-txt">мой бизнес</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="2019">
-								<a href="../tags/./2019.html">
-									<div class="stories__slide-pic"><img src="../img/og/2019.png" alt="2019" /></div>
-									<div class="stories__slide-txt">2019</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="центрп дде ржки предпри нимательства">
-								<a href="../tags/./tsentrp-dde-rzhki-predpri-nimatel-stva.html">
-									<div class="stories__slide-pic"><img src="../img/og/tsentrp-dde-rzhki-predpri-nimatel-stva.png" alt="центрп дде ржки предпри нимательства" /></div>
-									<div class="stories__slide-txt">центрп дде ржки предпри нимательства</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="чебоксары">
-								<a href="../tags/./cheboksary.html">
-									<div class="stories__slide-pic"><img src="../img/og/cheboksary.png" alt="чебоксары" /></div>
-									<div class="stories__slide-txt">чебоксары</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="чувашия">
-								<a href="../tags/./chuvashiya.html">
-									<div class="stories__slide-pic"><img src="../img/og/chuvashiya.png" alt="чувашия" /></div>
-									<div class="stories__slide-txt">чувашия</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="2018">
-								<a href="../tags/./2018.html">
-									<div class="stories__slide-pic"><img src="../img/og/2018.png" alt="2018" /></div>
-									<div class="stories__slide-txt">2018</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="бизнес">
-								<a href="../tags/./biznes.html">
-									<div class="stories__slide-pic"><img src="../img/og/biznes.png" alt="бизнес" /></div>
-									<div class="stories__slide-txt">бизнес</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="книги">
-								<a href="../tags/./knigi.html">
-									<div class="stories__slide-pic"><img src="../img/og/knigi.png" alt="книги" /></div>
-									<div class="stories__slide-txt">книги</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="высказывания">
-								<a href="../tags/./vyskazyvaniya.html">
-									<div class="stories__slide-pic"><img src="../img/og/vyskazyvaniya.png" alt="высказывания" /></div>
-									<div class="stories__slide-txt">высказывания</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="дмп">
-								<a href="../tags/./dmp.html">
-									<div class="stories__slide-pic"><img src="../img/og/dmp.png" alt="дмп" /></div>
-									<div class="stories__slide-txt">дмп</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="предпри ниматели чувашии">
-								<a href="../tags/./predpri-nimateli-chuvashii.html">
-									<div class="stories__slide-pic"><img src="../img/og/predpri-nimateli-chuvashii.png" alt="предпри ниматели чувашии" /></div>
-									<div class="stories__slide-txt">предпри ниматели чувашии</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="полезное">
-								<a href="../tags/./poleznoe.html">
-									<div class="stories__slide-pic"><img src="../img/og/poleznoe.png" alt="полезное" /></div>
-									<div class="stories__slide-txt">полезное</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="рби 21">
-								<a href="../tags/./rbi-21.html">
-									<div class="stories__slide-pic"><img src="../img/og/rbi-21.png" alt="рби 21" /></div>
-									<div class="stories__slide-txt">рби 21</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="подборка">
-								<a href="../tags/./podborka.html">
-									<div class="stories__slide-pic"><img src="../img/og/podborka.png" alt="подборка" /></div>
-									<div class="stories__slide-txt">подборка</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="чувашия 2018">
-								<a href="../tags/./chuvashiya-2018.html">
-									<div class="stories__slide-pic"><img src="../img/og/chuvashiya-2018.png" alt="чувашия 2018" /></div>
-									<div class="stories__slide-txt">чувашия 2018</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="ново чебоксарск">
-								<a href="../tags/./novo-cheboksarsk.html">
-									<div class="stories__slide-pic"><img src="../img/og/novo-cheboksarsk.png" alt="ново чебоксарск" /></div>
-									<div class="stories__slide-txt">ново чебоксарск</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="мама предпри ниматель">
-								<a href="../tags/./mama-predpri-nimatel-.html">
-									<div class="stories__slide-pic"><img src="../img/og/mama-predpri-nimatel-.png" alt="мама предпри ниматель" /></div>
-									<div class="stories__slide-txt">мама предпри ниматель</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="день предпри ниматель ства">
-								<a href="../tags/./den--predpri-nimatel--stva.html">
-									<div class="stories__slide-pic"><img src="../img/og/den--predpri-nimatel--stva.png" alt="день предпри ниматель ства" /></div>
-									<div class="stories__slide-txt">день предпри ниматель ства</div>
-								</a>
-							</div>
-						</div>
+						<div class="stories__arrow stories__arrow--prev" id="js-stories-prev"></div>
+						<div class="stories__arrow stories__arrow--next" id="js-stories-next"></div>
 					</div>
 				</div>
 			</div>
@@ -326,19 +335,32 @@
 					<div class="article__wrap" id="ja-article-wrap">
 						<div class="article-main">
 							<div class="article-content">
-								<div class="article-slider js-article-slider">
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/f5833a39992317d7f33afb70e01c5460/5E315E01/t51.2885-15/e35/40332852_486689355143458_1968206554898324272_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=110" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/bf3022a0d7c13c11f7879edf3042ad50/5E295376/t51.2885-15/e35/40819695_162491884635798_5411537870142941688_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=106" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/344403b976242a298bc31f86a2c49e00/5E2E5CB9/t51.2885-15/e35/40242519_271868543450973_198258539650598741_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=109" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/4339a1fbd970c4a966503e48d19b9de8/5E2B86A6/t51.2885-15/e35/39955514_1299826230166194_8818432003829644940_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=106" alt=""></div></div>
+								<div class="article-slider-wrap">
+									<div class="article-slider js-article-slider">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/f5833a39992317d7f33afb70e01c5460/5E315E01/t51.2885-15/e35/40332852_486689355143458_1968206554898324272_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=110" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/bf3022a0d7c13c11f7879edf3042ad50/5E295376/t51.2885-15/e35/40819695_162491884635798_5411537870142941688_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=106" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/344403b976242a298bc31f86a2c49e00/5E2E5CB9/t51.2885-15/e35/40242519_271868543450973_198258539650598741_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=109" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/4339a1fbd970c4a966503e48d19b9de8/5E2B86A6/t51.2885-15/e35/39955514_1299826230166194_8818432003829644940_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=106" class="swiper-lazy" alt="">
+											</div>
+											<div class="article-slider-pagination js-article-slider-pagination"></div>
+											<div class="article-slider-arrow article-slider-arrow--prev js-article-slider-prev"></div>
+											<div class="article-slider-arrow article-slider-arrow--next js-article-slider-next"></div>
+										</div>
+									</div>
 								</div>
 								<p>🔥СОСТОЯЛСЯ ДЕНЬ МАЛОГО И СРЕДНЕГО ПРЕДПРИНИМАТЕЛЬСТВА В ГОРОДЕ НОВОЧЕБОКСАРСК🔥<br/>07 сентября 2018 года в НП "Технопарк" Интеграл" г. Новочебоксарск в рамках Дня малого и среднего предпринимательства состоялась встреча предпринимателей с представителями администрации города, министерства экономического развития, промышленности и торговли, инфраструктуры государственной поддержки малого и среднего предпринимательства Чувашской Республики.<br/>Встречу открыла Чепрасова Ольга Викторовна – глава администрации города Новочебоксарск  Чувашской Республики. О природоохранной деятельности рассказала Бородина Ирина Михайловна – природоохранный прокурор Чебоксарской межрайонной природоохранной прокуратуры Волжской природоохранной прокуратуры.<br/><br/>Об основных механизмах защиты прав и законных интересов предпринимателей в современных условиях рассказал Рыбаков Александр Николаевич – уполномоченный по защите прав предпринимателей в Чувашской Республике. С информацией о государственной поддержке малого и среднего предпринимательства в Чувашской Республике выступилаМагомедова Зухра Пахрутдиновна – начальник отдела развития предпринимательства и ремесел Министерства экономического развития, промышленности и торговли Чувашской Республики.<br/><br/>Про  государственную поддержку организациями инфраструктуры поддержки малого и среднего бизнеса в Чувашской Республике рассказал Викторов Василий Олегович – руководитель Республиканского бизнес-инкубатора Минэкономразвития Чувашии. О кредитных ресурсах для субъектов МСП в АНО «Микрокредитная компания «Агентство по поддержке малого и среднего бизнеса в Чувашской Республике» и об услугах АНО «Гарантийный фонд Чувашской Республики» проинформировал Маслов Александр Владиславович – исполнительный директор автономной некоммерческой организации «Микрокредитная компания «Агентство по поддержке малого и среднего бизнеса в Чувашской Республике». Так же с информацией о деятельности ПАО НБД-банка выступила Попова Елена Викторовна – управляющий Чебоксарским операционным офисом ПАО НБД-банк.</p> 
 							</div>
 						<div>
 							<a href="https://www.instagram.com/p/BnlG4TWnL1d/" 
-								target="_blank" class="links-page-list__item-link">
-								<strong>Комментировать</strong>
-								<span>Instagram</span>
+								target="_blank" class="links-page-btn shake"><strong>Комментировать</strong>&nbsp;<span>Instagram</span>
 							</a>
 						</div>
 
@@ -395,7 +417,7 @@
 									<div class="article-more__item-pic-blind">
 										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>0</span>
 									</div>
-									<img src="https://scontent-arn2-2.cdninstagram.com/vp/a510d5bccc1d0164aa9f8de933949bf5/5E1A3DDC/t51.2885-15/e35/57333621_148500399532497_7628295170151099871_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=109" alt="📢📢📢💥26 апреля состоится">
+									<img src="https://scontent-arn2-2.cdninstagram.com/vp/3a90c6cefd7e28cc7fd69374218dd031/5E41CADC/t51.2885-15/e35/57333621_148500399532497_7628295170151099871_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=109" alt="📢📢📢💥26 апреля состоится">
 								</div>
 								<div class="article-more__item-name">📢📢📢💥26 апреля состоится</div>
 							</a>
@@ -413,7 +435,7 @@
 									<div class="article-more__item-pic-blind">
 										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>0</span>
 									</div>
-									<img src="https://scontent-arn2-2.cdninstagram.com/vp/2516ebd8add6753715f74d9d2322d6ff/5E1C2D54/t51.2885-15/e35/37823311_1006308512880779_9215667415281565696_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" alt="🔥СОСТОЯЛСЯ ДЕНЬ МАЛОГО И СРЕДНЕГО ПРЕДПРИНИМАТЕЛЬСТВА В ШЕМУРШИНСКОМ РАЙОНЕ!">
+									<img src="https://scontent-arn2-2.cdninstagram.com/vp/5d0c375082c8aeb1b63c05b7a7c009b0/5E43BA54/t51.2885-15/e35/37823311_1006308512880779_9215667415281565696_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" alt="🔥СОСТОЯЛСЯ ДЕНЬ МАЛОГО И СРЕДНЕГО ПРЕДПРИНИМАТЕЛЬСТВА В ШЕМУРШИНСКОМ РАЙОНЕ!">
 								</div>
 								<div class="article-more__item-name">🔥СОСТОЯЛСЯ ДЕНЬ МАЛОГО И СРЕДНЕГО ПРЕДПРИНИМАТЕЛЬСТВА В ШЕМУРШИНСКОМ РАЙОНЕ!</div>
 							</a>
@@ -422,7 +444,7 @@
 									<div class="article-more__item-pic-blind">
 										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>0</span>
 									</div>
-									<img src="https://scontent-arn2-2.cdninstagram.com/vp/24980091355c0d6caf8da2b4be763b39/5E1AB067/t51.2885-15/e35/35934405_218577422113285_4600260765469900800_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=101" alt="💥Состоялся День малого и среднего предпринимательства в городе Шумерля!">
+									<img src="https://scontent-arn2-2.cdninstagram.com/vp/762494e1dfce73b146252ba3c86bf7b7/5E423D67/t51.2885-15/e35/35934405_218577422113285_4600260765469900800_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=101" alt="💥Состоялся День малого и среднего предпринимательства в городе Шумерля!">
 								</div>
 								<div class="article-more__item-name">💥Состоялся День малого и среднего предпринимательства в городе Шумерля!</div>
 							</a>
@@ -435,14 +457,23 @@
 								</div>
 								<div class="article-more__item-name">📌Состоялся День малого и среднего предпринимательства в Комсомольском районе!</div>
 							</a>
-							<a href="./xxrespublikanskiy-biznes-inkubator-organizoval-seminar-na-temux--obzor-osnovnykh-izmeneniy-v-federal-.html" class="article-more__item">
+							<a href="./xxsostoyalas--vstrecha-so-shkol-nikami-v-ramkakh-proekta--bilet-v-budushchee-xx.html" class="article-more__item">
+								<div class="article-more__item-pic">
+									<div class="article-more__item-pic-blind">
+										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>31</span>
+									</div>
+									<img src="https://scontent-arn2-2.cdninstagram.com/vp/9a26f91785e48c417921a5eede7dd899/5E28A71F/t51.2885-15/e35/72211547_2506977182870039_2240527974603473180_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" alt="💥Состоялась встреча со школьниками в рамках проекта "Билет в будущее"💥">
+								</div>
+								<div class="article-more__item-name">💥Состоялась встреча со школьниками в рамках проекта "Билет в будущее"💥</div>
+							</a>
+							<a href="./xxmonitoring-deyatel-nosti-predpriyatiyx-poluchivshikh-gosudarstvennuyu-podderzhkuxx.html" class="article-more__item">
 								<div class="article-more__item-pic">
 									<div class="article-more__item-pic-blind">
 										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>26</span>
 									</div>
-									<img src="https://scontent-arn2-2.cdninstagram.com/vp/2d81b055af4d85f849d13a9711df568f/5E62707A/t51.2885-15/e35/69940771_229208664726597_2401463980010349010_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=109" alt="💥Республиканский бизнес-инкубатор организовал семинар на тему: "Обзор основных изменений в федеральном законе от 05.">
+									<img src="https://scontent-arn2-2.cdninstagram.com/vp/249a0833774529411769c11ad29c18ab/5E340679/t51.2885-15/e35/71507793_347861889316127_7411947010427614240_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" alt="💥Мониторинг деятельности предприятий, получивших государственную поддержку💥">
 								</div>
-								<div class="article-more__item-name">💥Республиканский бизнес-инкубатор организовал семинар на тему: "Обзор основных изменений в федеральном законе от 05.</div>
+								<div class="article-more__item-name">💥Мониторинг деятельности предприятий, получивших государственную поддержку💥</div>
 							</a>
 							<a href="./xxpodborka-kitayskoy-mudrostix-listay-chtoby-ne-propustit-xx.html" class="article-more__item">
 								<div class="article-more__item-pic">
@@ -452,15 +483,6 @@
 									<img src="https://scontent-arn2-2.cdninstagram.com/vp/2a4928f95d9b1b3f65efd5852c228bdc/5E40BE72/t51.2885-15/e35/71208910_164599364612083_1799266698899549133_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=107" alt="💥Подборка китайской мудрости, листай чтобы не пропустить😉">
 								</div>
 								<div class="article-more__item-name">💥Подборка китайской мудрости, листай чтобы не пропустить😉</div>
-							</a>
-							<a href="./xxsostoyalsya-den--malogo-i-srednego-predprinimatel-stva.html" class="article-more__item">
-								<div class="article-more__item-pic">
-									<div class="article-more__item-pic-blind">
-										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>23</span>
-									</div>
-									<img src="https://scontent-arn2-2.cdninstagram.com/vp/c2a50d3634ef247342262fb38ffc9cb4/5E2E228E/t51.2885-15/e35/70364732_472689933334934_4064802967495947633_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=102" alt="💥Состоялся День малого и среднего предпринимательства">
-								</div>
-								<div class="article-more__item-name">💥Состоялся День малого и среднего предпринимательства</div>
 							</a>
 						</div>
 					</section>		
@@ -501,11 +523,12 @@
 			</div>
 		</div>		
 	</div>
+	<!--swiper-->
+	<script src="../js/vendors/swiper.min.js"></script>
 	<!--jQuery-->
 	<script src="../js/vendors/jquery.min.js"></script>
-	<script src="../js/vendors/jquery.loadScroll.js"></script>
-	<!--device-->
-	<script src="../js/vendors/slick.min.js"></script>
+	<!--lazyloadxt-->
+	<script src="../js/vendors/jquery.lazyloadxt.js"></script>
 	<!--init-->
 	<script src="../js/jquery.init.js"></script>
 	<!--my scripts-->
