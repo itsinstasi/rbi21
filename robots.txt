@@ -1,2 +1,4 @@
 ﻿User-agent: *
 Sitemap: http://rbi21.itsinsta.site//sitemap.xml
+Disallow: /main.html
+Disallow: /main
